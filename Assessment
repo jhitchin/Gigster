@@ -1,0 +1,26 @@
+High level test plan for the Lyft Rider web page:
+Verify all links at the top and bottom of page.
+Verify all mouseover effects are working.
+Verify you can switch languages using the UI in the lowest right corner of the page.
+Verify scrolling works without parts of the page moving or changing.
+Verify the moving parts of the page (the ride selector and the airport ride bulleted points UI) work correctly.
+Verify the ride choices expand when clicked.
+Verify the button for ride choice goes to a page where you can download the app.
+Verify buttons or links for other parts of page such as Lyft Pink, Airport, Lyft for All, and Rewards program go to the correct pages.
+Verify Gift Card link goes to an Amazon page.
+Attempt to navigate the page using just the keyboard. (For example, on Chrome, if Book this Ride has focus and you hit tab to go to the next selection and hit space to expand it, it expands and then selects the button to go to the app download even though that button did not have focus).
+Open the developer tools for the web page and verify there are no errors in the scripting console.
+Using a screen reader, verify that there are no invisible parts of the page (not visible, yet the screen reader reads them).
+
+Important Positive Scenario:
+Scroll to the ride choices.
+Using the arrow keys go through the selections available verify that all can be reached.
+Click on one of the options. Verify that the selection expands and now shows a button
+Click button and verify that you go to a page for app download.
+
+Important Negative Scenario:
+In the ride selection area, click on Bikes.
+Hit Tab. Verify the button Book This Ride now has focus.
+Hit Tab. Verify Book This Ride no longer has focus.
+Hit Space. Verify Priority Pickup expands.
+Currently, on Chrome, doing this will select the Book This Ride for Bikes even though it does not have the focus. This means the page is not suitable for people with mobility issues, vision issues or other forms of accessibility requirements.
